@@ -1,21 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Signin } from "./components/Signin";
-import { BrowserRouter as Router } from "react-router-dom";
-import { BottomWarning } from "./components/BottomWarning";
-import { Button } from "./components/Button";
-import H
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Router>
-        <Switch>
-
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/signup" element={<Signup />} /> */}
+          <Route path="/signin" element={<Signin />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/send" element={<SendMoney />} /> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
