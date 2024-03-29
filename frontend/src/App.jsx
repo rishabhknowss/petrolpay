@@ -5,6 +5,8 @@ import { Signup } from "./components/Signup";
 import { Dashboard } from "./components/Dashboard";
 import { Receipt } from "./components/Receipt";
 import { AdminSignin } from "./components/AdminSignin";
+import { AdminSignup } from "./components/AdminSignup";
+import { Hero } from "./components/Hero";
 function App() {
   return (
     <>
@@ -15,9 +17,11 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/receipt" element={<Receipt/>} />
           <Route path="/adminsignin" element = {<AdminSignin/>} />
+          <Route path="/adminsignup" element = {<AdminSignup/>} />
           {/* <Route path="/send" element={<SendMoney} />  */}
         </Routes>
       </BrowserRouter>
+      <Hero></Hero>
     </>
   );
 }

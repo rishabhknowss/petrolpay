@@ -1,6 +1,8 @@
+import SearchBar from "./SearchBar";
+
 export function Dashboard() {
     return (
-      <div className="flex min-h-screen items-start p-4 md:items-center md:p-6">
+      <div className="flex min-h-screen items-start p-4 md:items-center md:p-6 shadow-md">
         <div className="w-full max-w-3xl mx-auto">
           <div className="grid gap-4 md:gap-6">
             <div className="flex items-center gap-4">
@@ -9,7 +11,7 @@ export function Dashboard() {
                   alt="Avatar"
                   className="rounded-full"
                   height="96"
-                  src="/placeholder.svg"
+                  src="./src/assets/placeholder.svg"
                   style={{
                     aspectRatio: "96/96",
                     objectFit: "cover",
@@ -17,9 +19,9 @@ export function Dashboard() {
                   width="96"
                 />
               </div>
-              <div className="grid gap-1">
-                <h1 className="font-semibold text-2xl">Alice Smith</h1>
-                <p className="text-gray-500 dark:text-gray-400">alice@example.com</p>
+              <div className="grid gap-1 ">
+                <h1 className="font-semibold text-2xl">Mukesh</h1>
+                <p className="text-gray-500 dark:text-gray-400">mukesh@petrolkhareedo.com</p>
               </div>
             </div>
             <div className="grid gap-4">
@@ -28,24 +30,22 @@ export function Dashboard() {
                   <div className="grid gap-4">
                     <div className="flex items-center gap-4 p-4 bg-gray-100/40 dark:bg-gray-800/40 rounded-t-lg">
                       <PackageIcon className="h-6 w-6" />
-                      <div className="font-semibold">My Shops</div>
-                      <button className="ml-auto px-4 py-2 text-sm rounded-md bg-blue-500 text-white">
-                        Add new shop
-                      </button>
+                      <div className="font-semibold">My Stops</div>
+                      <SearchBar/>
                     </div>
                     <div className="border-t border-gray-200" />
                     <div className="p-4 grid gap-4">
                       <ShopCard
-                        name="Acme Inc"
-                        description="Widgets and gadgets"
+                        name="Indian Oil"
+                        description=""
                       />
                       <ShopCard
-                        name="Baker's Delight"
-                        description="Freshly baked goods"
+                        name="Hindustan Petroleum"
+                        description=""
                       />
                       <ShopCard
-                        name="Fashion Forward"
-                        description="Trendy clothing and accessories"
+                        name="Reliance"
+                        description=""
                       />
                     </div>
                   </div>
@@ -86,9 +86,9 @@ export function Dashboard() {
         <img
           alt="Shop logo"
           className="rounded-md aspect-square object-cover"
-          height="64"
-          src="/placeholder.svg"
-          width="64"
+          height="32"
+          src="./src/assets/cart.svg"
+          width="32"
         />
         <div className="grid gap-1">
           <h3 className="font-semibold">{name}</h3>
@@ -97,7 +97,7 @@ export function Dashboard() {
           </p>
         </div>
         <button className="ml-auto px-4 py-2 text-sm rounded-md bg-blue-500 text-white">
-          Send money
+          Buy Fuel
         </button>
       </div>
     );
