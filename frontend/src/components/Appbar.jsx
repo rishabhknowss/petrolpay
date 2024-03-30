@@ -13,5 +13,7 @@ export const Appbar = () => {
                 </div>
             </div>
         </div>
+      </div>
     </div>
-}
+  );
+};
